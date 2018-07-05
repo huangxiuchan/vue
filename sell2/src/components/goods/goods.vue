@@ -109,7 +109,7 @@ export default {
   created() {
     this.classMap = ['decrease', 'discount', 'special', 'invoice', 'gurantee'];
 
-    const url = debug ? '/api/goods' : 'https://huangxiuchan.github.io/vue/sells/api/goods';
+    const url = debug ? '/api/goods' : 'http://ustbhuangyi.com/sell/api/goods';
     this.$http.get(url).then((response) => {
       // response.header('Access-Control-Allow-Origin', '*');
       response = response.body;
