@@ -35,7 +35,7 @@
       };
     },
     created() {
-      const url = debug ? '/api/seller' : 'https://huangxiuchan.github.io/vue/sells/api/seller';
+      const url = debug ? '/api/seller' : 'http://ustbhuangyi.com/sell/api/seller';
       console.log(this.seller.id);
       this.$http.get(url).then((response) => {
          // response.headers('Access-Control-Allow-Origin', '*');
