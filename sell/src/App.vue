@@ -35,7 +35,7 @@
       };
     },
     created() {
-      const url = debug ? '/api/seller' : 'http://ustbhuangyi.com/sell/api/seller';
+      const url = debug ? '/api/seller' : '../api/seller.json';
       console.log(this.seller.id);
       this.$http.get(url).then((response) => {
          // response.headers('Access-Control-Allow-Origin', '*');
